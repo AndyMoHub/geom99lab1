@@ -20,15 +20,14 @@
 <script>
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 6,
+    zoom: 7,
     center: { lat: 36.8157504, lng: -89.4428462 },
     mapTypeId: "terrain",
   });
  const flightPlanCoordinates = [
-    { lat: 37.772, lng: -122.214 },
-    { lat: 21.291, lng: -157.821 },
-    { lat: -18.142, lng: 178.431 },
-    { lat: -27.467, lng: 153.027 },
+    { lat: 42.2351602, lng: -83.356139 },
+    { lat: 29.9795472, lng: -90.267346 },
+
   ];
   const flightPath = new google.maps.Polyline({
     path: flightPlanCoordinates,
