@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+     </head>
+  <body>
+    <div id="map"></div>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
+    </script>
+  </body>
+</html>
+
+<style>
+   /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+  
+</style>
+
+<script>
+  
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 6,
+    center: { lat: 36.8157504, lng: -89.4428462 },
+    mapTypeId: "terrain",
+  });
