@@ -2,28 +2,17 @@
   <head>
     <title>Andy's Cruise Trip</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
 </head>
 
 <body>
     <div id="map"></div>
-
-    <!-- 
-      The `defer` attribute causes the callback to execute after the full HTML
-      document has been parsed. For non-blocking uses, avoiding race conditions,
-      and consistent behavior across browsers, consider loading using Promises
-      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-      -->
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap&v=weekly" async>
 </script>
-    </script>
   </body>
 </html>
 
-
 <script>
-
 function initMap() {
   const myLatLng = { lat: 36.8157504, lng: -89.4428462 };
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -39,7 +28,6 @@ function initMap() {
 }
 
 window.initMap = initMap;
-
 </script>
 
 <style>
