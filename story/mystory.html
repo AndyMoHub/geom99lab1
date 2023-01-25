@@ -27,12 +27,14 @@ function initMap() {
  const flightPlanCoordinates = [
     { lat: 42.2351602, lng: -83.356139 },
     { lat: 29.9795472, lng: -90.267346 },
+    { lat: 21.3407112, lng: -89.6725772 },
+   
    
   ];
   const flightPath = new google.maps.Polyline({
     path: flightPlanCoordinates,
     geodesic: true,
-    strokeColor: "#FF0000",
+    strokeColor: "#0000FF",
     strokeOpacity: 1.0,
     strokeWeight: 2,
   });
@@ -43,38 +45,19 @@ function initMap() {
     new google.maps.Marker({
     position: { lat: 42.235, lng: -83.356 },
     map,
-    title: "Hello World!",
+    title: "Detroit Airport",
   });
 
     new google.maps.Marker({
     position: { lat: 29.979, lng: -90.267 },
     map,
-    title: "Hello World!",
+    title: "New Orleans Airport",
   });
 
-    // Define a symbol using SVG path notation, with an opacity of 1.
-    const lineSymbol = {
-    path: "M 0,-1 0,1",
-    strokeOpacity: 1,
-    scale: 4,
-  };
-  // Create the polyline, passing the symbol in the 'icons' property.
-  // Give the line an opacity of 0.
-  // Repeat the symbol at intervals of 20 pixels to create the dashed effect.
-  const line = new google.maps.Polyline({
-    path: [
-      { lat: 22.291, lng: 153.027 },
-  
-    ],
-    strokeOpacity: 0,
-    icons: [
-      {
-        icon: lineSymbol,
-        offset: "0",
-        repeat: "20px",
-      },
-    ],
-    map: map,
+  new google.maps.Marker({
+    position: { lat: 21.3407112, lng: -89.6725772 },
+    map,
+    title: "Carnival dock",
   });
 }
 
