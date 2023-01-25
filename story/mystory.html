@@ -8,14 +8,7 @@
         #map {
           height: 100%;
         }
-      
-  /* Optional: Makes the sample page fill the window. */
-        html,
-        body {
-          height: 100%;
-          margin: 0;
-          padding: 0;
-        }
+     
 </style>
 <script>
 function initMap() {
@@ -28,8 +21,7 @@ function initMap() {
     { lat: 42.2351602, lng: -83.356139 },
     { lat: 29.9795472, lng: -90.267346 },
     { lat: 21.3407112, lng: -89.6725772 },
-   
-   
+  
   ];
   const flightPath = new google.maps.Polyline({
     path: flightPlanCoordinates,
@@ -68,6 +60,17 @@ window.initMap = initMap;
       </head>
     <body>
     <div id="map"></div>
+    <div id="intro">
+        <h3>Hello!</h3>
+        <h2>Welcome to my cruise trip to Mexico</h2>
+        <p>
+        Back in 2019, my family and I went on a 7 day cruise taking us through the gulf of mexico to one of the seven wonders of the world, Chichén Itzá. 
+          Our adventure start with a long road trip from Newmarket all the way to Detroit, USA. We flew from Detroit down to New Orleans where the cruise ship was docked. 
+          The ship then took us down the gulf of mexico and to Yucatán, Mexico. 
+
+        </p>
+    </div>
+      
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
     </script>
   </body>
