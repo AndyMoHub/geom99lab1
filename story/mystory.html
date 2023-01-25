@@ -38,10 +38,22 @@ function initMap() {
   });
 
   flightPath.setMap(map);
-}
-  
+
+
+    new google.maps.Marker({
+    position: { lat: 42.235, lng: -83.356 },
+    map,
+    title: "Hello World!",
+  });
+
+    new google.maps.Marker({
+    position: { lat: 29.979, lng: -90.267 },
+    map,
+    title: "Hello World!",
+  });
+
     // Define a symbol using SVG path notation, with an opacity of 1.
-  const lineSymbol = {
+    const lineSymbol = {
     path: "M 0,-1 0,1",
     strokeOpacity: 1,
     scale: 4,
@@ -51,7 +63,8 @@ function initMap() {
   // Repeat the symbol at intervals of 20 pixels to create the dashed effect.
   const line = new google.maps.Polyline({
     path: [
-       { lat: 21.3407112, lng: -89.6725772 },
+      { lat: 22.291, lng: 153.027 },
+  
     ],
     strokeOpacity: 0,
     icons: [
@@ -63,6 +76,7 @@ function initMap() {
     ],
     map: map,
   });
+}
 
 
 window.initMap = initMap;
