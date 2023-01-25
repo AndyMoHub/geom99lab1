@@ -8,6 +8,29 @@
         #map {
           height: 100%;
         }
+  
+/* Maps container */
+#map-container {
+  width: 100%;
+  height: 500px;
+  border: none;
+  padding: 0;
+}
+  
+  #intro {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100vw;
+}
+#intro h1 { 
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
      
 </style>
 <script>
@@ -59,7 +82,10 @@ window.initMap = initMap;
    
       </head>
     <body>
-    <div id="intro">
+     <div id="intro">
+        <h1>My Journey through the Gulf of Mexico</h1>
+    </div>  
+    <div id="intro2">
         <h3>Hello!</h3>
         <h2>Welcome to my cruise trip to Mexico</h2>
         <p>
@@ -69,9 +95,7 @@ window.initMap = initMap;
 
         </p>
     </div>
-          <div id="intro2">
-        <h1>My Journey through the Gulf of Mexico</h1>
-    </div>
+
     <div id="map-container">
       <div id="map"></div>
 
