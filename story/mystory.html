@@ -9,7 +9,6 @@
           height: 100%;
         }
   
-/* Maps container */
 #map-container {
   width: 100%;
   height: 800px;
@@ -32,45 +31,41 @@
   text-transform: uppercase;
 }
   
-  
-/* Set the background color, text alignment, and padding for the second block */
+
 #intro2 {
   background-color: #ECDEC9;
   text-align: center;
   padding: 40px;
 }
 
-/* Small heading for the second block */
 #intro2 h3 {
   font-size: 2.5em;
   margin-bottom: 10px;
   color: #000000;
   text-transform: uppercase;
 }
-/* Large heading for the second block */
+
 #intro2 h2 {
     font-family: "Poppins", sans-serif;
   font-size: 2.2em;
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-
-/* Paragraph for the second block */
+  
 #intro2 p {
-  font-size: 1.2em;
+  font-size: 1.6em;
   text-align: center;
   line-height: 1.5;
-  color: #848484;
+  color: #000000;
   max-width: 90%; /* set the maximum width */
-  word-wrap: break-word; /* break long words */
 }
      
 </style>
-    29.320909,-87.335393,5.75z
+ 
 <script>
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 6,
+    zoom: 5,
     center: { lat: 29.320909, lng: -87.335393 },
     mapTypeId: "terrain",
   });
